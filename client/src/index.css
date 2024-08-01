@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li{
+  list-style-type: none;
+}
+li:hover{
+  color: red;
+  cursor: pointer;
+
+}
+.slick-slide{
+  margin: 0 10px;
+}
+.marquee-content {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
